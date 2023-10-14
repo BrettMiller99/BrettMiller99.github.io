@@ -67,9 +67,6 @@ header {
 p {
   margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
 }
-p + p {
-
-}
 
 /**
  * Quotes & Blockquotes
@@ -101,6 +98,16 @@ blockquote p:last-child {
 
 /* Full size background image */
 html, #container, .inner { background-color: transparent; }
+
+/* .inner adjustments*/
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Set the height to 100% of the viewport height */
+  background-color: hsla(0, 0%, 0%, 0.651); /* Add this to make it black */
+  color: white; /* Add this to make text white for better visibility */
+}
 
 html {
   background: url(background.jpg) center center no-repeat fixed;
